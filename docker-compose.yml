@@ -1,0 +1,11 @@
+version: "2.3"
+services:
+  pwn_smtp:
+    # build: .
+    image: test
+    ports:
+      - "9999:9999"
+    environment:
+      - FLAG=flag{test}
+    restart: unless-stopped
+
